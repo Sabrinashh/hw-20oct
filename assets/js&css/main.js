@@ -1,7 +1,7 @@
 let saveBtn = document.querySelector("#save");
 let resetBtn = document.querySelector("#reset");
-let boxX = document.getElementById("boxWidth").value; 
-let boxY = document.getElementById("boxHeight").value; 
+let boxX = document.getElementById("boxWidth"); 
+let boxY = document.getElementById("boxHeight"); 
 let ballXY = document.getElementById("ballWidthAndHeight").value;
 let ball = document.querySelector('.ball');
 let box = document.querySelector('.box');
@@ -26,11 +26,11 @@ document.body.addEventListener('keydown',e=>{
     }
 })
 saveBtn.addEventListener('click', function(){
-    let bxwidth=parseInt(boxX);
+    let bxwidth=parseInt(boxX.value);
     box.style="width: ${bxwidth}";
-    let bxheight=parseInt(boxY);
+    let bxheight=parseInt(boxY.value);
     box.style="height: ${bxheight}";
-    let ballwh=parseInt(ballXY);
+    let ballwh=parseInt(ballXY.value);
     ball.style="width: ${ballwh}";
     ball.style="height: ${ballwh}";
 })

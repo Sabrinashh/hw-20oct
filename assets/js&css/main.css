@@ -2,13 +2,13 @@
     position: relative;
     width: 700px;
     height: 400px;
-    background-color: black;
+    background-color: lightblue;
     margin: 5% auto;
 }
 .ball{
     position: absolute;
     width: 60px;
     height: 60px;
-    background-color: red;
+    background-color: palevioletred;
     border-radius: 50%;
 }
